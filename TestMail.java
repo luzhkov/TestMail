@@ -27,10 +27,9 @@ public class TestMail {
         driver.findElement(By.id("mailbox:submit-button")).click();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.className("compose-button__txt")).click();
-        driver.findElement(By.className("container--zU301")).sendKeys("luzhkov1996@gmail.com luzhkov2702@mail.ru ");
-
-
-
+        driver.findElement(By.className("container--zU301")).sendKeys("idedov@at-consulting.ru nbykanov@at-consulting.ru ");
+        driver.findElement(By.xpath("(//div[@role])[1]")).sendKeys("sdfsdfsdfsdfsd");
+        driver.findElement(By.className("(//span//span[@class='button2__txt'])[1]")).click();
 
         driver.quit();
     }
